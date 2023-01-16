@@ -1,0 +1,150 @@
+* {
+  padding: 0;  
+  margin: 0;
+  font-family: 'Lato, Arial, Helvetica, sans-serif';
+  font-weight: 400;  
+}
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.top_menu_container {
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.top_menu_section {
+    display: flex;
+}
+
+.top_menu_section li {
+    margin: 1px;
+}
+
+.top_menu_section li a{
+    padding-top: 5px;
+    height: 25px;
+    font-size: 11px;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+.rojo {
+    text-transform: uppercase;
+    background-color: #a61a27;
+    color:white
+}
+.gris {
+    background-color: gray;
+    color:white
+}
+.top_menu_section_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    color: #000;
+}
+.top_menu_section a:hover {
+    background-color: #7f131efd;
+    cursor: pointer;
+}
+
+.top_menu_section_links li{
+    margin: 5px;
+    font-size: 11px;
+    color:#000;
+}
+
+.top_menu_section_links a:active, a:visited{
+    color: #787878;
+}
+
+.top_menu_section_links a:hover{
+    color: #000;
+}
+/*logo,links + forms*/
+.log_menu_form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; /*strech*/
+}
+
+.log_menu_form_menu{
+    display: flex;
+}
+
+.link_active {
+    color: #789c48 !important;
+}
+
+.log_menu_form_menu li {
+    font-size: 13px;
+    margin: 3px;
+}
+.log_menu_form_menu a, a:active {
+    color: #000;
+}
+
+.log_menu_form_menu a:hover {
+    color: #789c48;
+}
+
+.log_menu_form_formulario {
+    position: relative;
+}
+
+.log_menu_form_formulario input{
+    height: 34px;
+    border: 1px solid #e2e4e2;
+    background-color: #f7f8f7;
+    padding: 10px;
+    font-weight: 100;
+    outline: none;/*quita el borde cuando hacemos click sobre el input*/
+}
+
+.log_menu_form_formulario .boton {
+    position: absolute;
+    background-color: none;
+    height: 28px;
+    width: 35px;
+    border: none;
+    right: 1px;
+    bottom: 1px;
+    background-color: #f7f8f7;
+}
+
+/**/
+.bottom_links_container {
+    display: flex;
+    margin-top: 15px;
+    min-height: 36px;
+    background-color: #789c48;
+    justify-content: center;
+    align-items: center;
+}
+.bottom_links_container a {    
+    color:white;
+    margin: 5px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/**/
+.sofia_container {
+    position: fixed;
+    top:50%;
+    right:0%;
+    margin-right: 10px;
+}
+
+.sofia_help {
+    visibility: hidden;
+}
+.sofia_container:hover > .sofia_help {
+    visibility: visible;
+}
